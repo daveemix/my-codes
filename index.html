@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple javascript calculator
+        </title>
+        <script type = "text/javascript">
+        function calc(){
+            var n1 = parseFloat(document.getElementById("n1").value)
+            var n2 = parseFloat(document.getElementById("n2").value)
+
+            var op = document.getElementById("opr").value
+            
+            if(op === "+"){
+                document.getElementById('result').value = n1+n2;
+            }
+
+            if(op === "-"){
+                document.getElementById('result').value = n1-n2;
+            }
+
+            if(op === "*"){
+                document.getElementById('result').value = n1*n2;
+            }
+
+            if(op === "/"){
+                document.getElementById('result').value = n1/n2;
+            }
+
+            if(op === "%"){
+                document.getElementById('result').value = n1%n2;
+            }
+        }
+        
+        
+        </script>
+    </head>
+    <body>
+        <h1>My simple Calculator</h1>
+        First input :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id = "n1" maxlength="7" value = "0.0">
+        <br><br>
+        Operator :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select id = "opr">
+                <option value = "+">+</option>
+                <option value = "-">-</option>
+                <option value = "*">*</option>
+                <option value = "/">/</option>
+                <option value = "%">%</option>
+    
+          
+    
+            </select>
+            <br>
+            <br>
+        Second input :&nbsp; <input type = "text" id = "n2" maxlenth = "7" value = "0.0"><br><br>
+       
+        Compute :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "button" value = "=" onclick="calc();">
+        <br>
+        <br>
+        Result : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id="result"><br><br>
+
+
+
+
+
+    </body>
+
+
+
+
+
+</html>
